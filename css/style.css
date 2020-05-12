@@ -1,5 +1,5 @@
 * {
-		margin: 0;
+	margin: 0;
 	padding: 0;
 }
 body{
@@ -10,6 +10,8 @@ body{
   backdrop-filter: blur(5px); 
   font-family: Verdana;
   height: 100vh; 
+  margin: 0;
+	padding: 0;
 }
 .menu{
 	background: rgba(0,0,0, 0.5);
