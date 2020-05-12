@@ -1,0 +1,46 @@
+body{
+	background: url('../images/bg.jpg');
+	background-size: auto 100vh;
+	background-position: center;
+  font-family: Verdana;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);  
+}
+
+.menu{
+	background: #000;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+ list-style: none; 
+}
+
+a{
+	color: #fa3f1f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+a:hover{
+	color: #f10000;
+	text-decoration: none;
+}
+
+.site-subtitle, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle {
+ font-style: italic;
+ text-transform: uppercase;
+ font-weight: 400;
+ font-size: 0.8em;
+}
