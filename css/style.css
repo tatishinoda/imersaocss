@@ -1,15 +1,19 @@
+* {
+		margin: 0;
+	padding: 0;
+}
 body{
 	background: url('../images/bg.jpg');
 	background-size: auto 100vh;
 	background-position: center;
+	-webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); 
   font-family: Verdana;
-  height: 100vh;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);  
+  height: 100vh; 
 }
-
 .menu{
-	background: #000;
+	background: rgba(0,0,0, 0.5);
+	padding: 15px 0;
 }
 
 .menu ul {
@@ -37,7 +41,9 @@ a:hover{
   color: whitesmoke;
   text-align: center;
 }
-
+.site-title{
+	padding: 20px 0 5px;
+}
 .site-subtitle {
  font-style: italic;
  text-transform: uppercase;
