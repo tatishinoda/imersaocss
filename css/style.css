@@ -2,59 +2,112 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	line-height: 1;
 }
 body{
-	color: whitesmoke;
-	background: url('../images/bg.gif');
-	background-position: center;
+	background: #c0dfed;
 	font-family: Verdana;
-	height: 100vh; 
-	margin: 0;
-	padding: 0;
+	font-size: 14px;
 }
-.body-overlay{
-	background:rgba(0,0,0,0.8);
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+header{
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8ec1da;
+	background-image: url('../images/bg-clouds.png');
+	background-position: bottom;
+	background-repeat: repeat-x;
+	animation: animatedBackground 40s linear infinite;
 }
-.menu{
-	background: rgba(0,0,0, 0.5);
-	padding: 15px 0;
-}
+	@keyframes animatedBackground {
+		from { background-position: 0 bottom; }
+		to { background-position: 100% bottom; }
+	}
 
+.menu{
+	background: rgba(0,0,0, 0.1);
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
 .menu ul {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	text-align: center;
 }
-
 .menu li {
  	list-style: none; 
 }
-
+.menu a{
+	padding: 15px 20px;
+	display: block;
+}
 a{
-	color: #fa3f1f;
+	color:#27496d;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 a:hover{
-	color: #f10000;
+	color: #192e44;
 	text-decoration: none;
 }
-
 .site-subtitle, 
 .site-title {
-	color: whitesmoke;
+	color: #192e44;
 	text-align: center;
 }
 .site-title{
+	font-family: 'Zeyada', cursive;
 	padding: 20px 0 5px;
+	font-size: 2em;
 }
 .site-subtitle {
 	font-style: italic;
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 0.8em;
+}
+section{
+	width: 90%;
+	margin: 0 auto;
+}
+.bg-claro{
+	background:#c0dfed;
+}
+.portfolio h2{
+	text-align: center;
+	padding: 85px 0 30px;
+	text-transform: uppercase;
+}
+.portfolio-cards {
+	display: flex;
+	align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.portfolio-cards figure{
+	margin: 15px 5px;
+}
+.img-portfolio{
+	max-width: 200px;
+	height: auto;
+	border-radius: 8px;
+}
+.img-portfolio:hover{
+	opacity: 0.8;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:400px){
+	.site-title{
+		font-size: 4.5em;
+	}
+	.menu ul {
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }
