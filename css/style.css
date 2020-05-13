@@ -1,15 +1,15 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	color: whitesmoke;
 	background: url('../images/bg.gif');
 	background-position: center;
-	/*backdrop-filter: opacity(0.25);*/
-  font-family: Verdana;
-  height: 100vh; 
-  margin: 0;
+	font-family: Verdana;
+	height: 100vh; 
+	margin: 0;
 	padding: 0;
 }
 .body-overlay{
@@ -25,12 +25,12 @@ body{
 }
 
 .menu ul {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 
 .menu li {
- list-style: none; 
+ 	list-style: none; 
 }
 
 a{
@@ -46,15 +46,15 @@ a:hover{
 
 .site-subtitle, 
 .site-title {
-  color: whitesmoke;
-  text-align: center;
+	color: whitesmoke;
+	text-align: center;
 }
 .site-title{
 	padding: 20px 0 5px;
 }
 .site-subtitle {
- font-style: italic;
- text-transform: uppercase;
- font-weight: 400;
- font-size: 0.8em;
+	font-style: italic;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.8em;
 }
