@@ -6,7 +6,7 @@
 }
 body{
 	background: #c0dfed;
-	font-family: Verdana;
+	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
 }
 header{
@@ -43,6 +43,12 @@ header{
 	padding: 15px 20px;
 	display: block;
 }
+	@media (min-width: 400px){
+		.menu ul {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
 a{
 	color:#27496d;
 	text-decoration: none;
@@ -69,9 +75,17 @@ a:hover{
 	font-weight: 400;
 	font-size: 0.8em;
 }
+	@media (min-width:400px){
+		.site-title{
+			font-size: 4.5em;
+		}
+		.site-subtitle{
+			font-size: 1.2em;
+		}
+	}
+
 section{
-	width: 90%;
-	margin: 0 auto;
+	margin: 0 2em;
 }
 .bg-claro{
 	background:#c0dfed;
@@ -82,32 +96,39 @@ section{
 	text-transform: uppercase;
 }
 .portfolio-cards {
-	display: flex;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1;
+	align-content: center;
 	align-items: baseline;
-    justify-content: center;
-    flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
 }
+	@media(min-width: 560px){
+		.portfolio-cards{
+			gap: 20px;
+			grid-template-columns: repeat(2, 45%);
+		}
+	}
+
+	@media (min-width: 900px){
+		.portfolio-cards {
+			gap: 25px;
+			grid-template-columns: repeat(3, 25%);
+		}
+	}
+
 .portfolio-cards figure{
 	margin: 15px 5px;
 }
+.portfolio-cards figcaption {
+	margin: 15px 0;
+}
 .img-portfolio{
-	max-width: 200px;
-	height: auto;
-	border-radius: 8px;
+	width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
-.img-portfolio:hover{
+.portfolio-cards figure a:hover{
 	opacity: 0.8;
-}
-
-/* MEDIA QUERIES */
-@media (min-width:400px){
-	.site-title{
-		font-size: 4.5em;
-	}
-	.menu ul {
-		flex-direction: row;
-		justify-content: space-around;
-	}
 }
