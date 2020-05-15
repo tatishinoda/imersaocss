@@ -7,25 +7,45 @@
   <title>Tatiane Gabrielle</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Zeyada&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/101dd922fa.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="body-overlay"></div>
+<body id="main">
   <header>
+    <span class="menu-icon" onclick="openNav()">&#9776;</span>
+    <div id="menu-celular" class="menu-celular">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </div>
     <nav class="menu">
       <ul>
         <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
+
     <div class="title">
       <h1 class="site-title">Tatiane Gabrielle</h1>
       <h2 class="site-subtitle">Web Designer e Front End Júnior</h2>
     </div>
   </header>
 
-  <section class="bg-claro portfolio">
+  <section id="sobre" class="bg-claro sobre">
+    <h2>Quem sou eu?</h2>
+    <div class="conteudo">
+      <div class="foto"><img src="/images/eu.jpg" alt="Tatiane Gabrielle"></div>
+      <div class="texto">
+        <p>Oi, meu nome é Tatiane, tenho 30 anos e sou Web Designer e Desenvolvedora Front End Jr.</p>
+        <p>Atualmente trabalho como freelancer desenvendo sites e email marketing, estou buscando sempre me atualizar,
+          pois acredito que nunca saberemos tudo e é sempre bom aprender novas formas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="bg-claro portfolio">
     <h2>Portfólio</h2>
 
     <div class="portfolio-cards">
@@ -68,7 +88,29 @@
     </div>
 
   </section>
-
+  <section id="contato" class="bg-claro contato">
+    <h2>Contato </h2>
+    <p>Você pode me encontrar em um desses lugares aqui:</p>
+    <div class="social-icons">
+      <a class="social" href="https://github.com/tatishinoda/" title="GitHub"><i class="fab fa-github-alt"></i></a>
+      <a class="social" href="mailto:hello@tatishinoda.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a class="social" href="https://www.twitter.com/_shinoda" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a class="social" href="https://tatishinoda.com" title="Site Pessoal"><i
+          class="fa fa-external-link-square-alt"></i></a>
+    </div>
+  </section>
+  <footer>
+    <p>Feito com muito <i class="fa fa-heart" style="color: #f10000;"></i> por <a href="https://tatishinoda.com">Tatiane
+        Gabrielle</a></p>
+  </footer>
+  <script>
+    function openNav() {
+      document.getElementById("menu-celular").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("menu-celular").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>

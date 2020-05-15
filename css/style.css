@@ -6,6 +6,7 @@
 }
 body{
 	background: #c0dfed;
+	color: #000;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
 }
@@ -26,27 +27,96 @@ header{
 	}
 
 .menu{
-	background: rgba(0,0,0, 0.1);
-	position: fixed;
-	top: 0;
-	width: 100vw;
+	display: none;
 }
-.menu ul {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-.menu li {
- 	list-style: none; 
-}
-.menu a{
-	padding: 15px 20px;
-	display: block;
-}
-	@media (min-width: 400px){
+	@media (min-width: 560px){
+		.menu{
+			display: block;
+			background: #8ec1da;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			font-size: 1.3em;
+		}
 		.menu ul {
 			flex-direction: row;
 			justify-content: space-around;
+			display: flex;
+		}
+		.menu li {
+			 list-style: none; 
+		}
+		.menu a{
+			padding: 15px 20px;
+			display: block;
+			transition: .5s;
+		}
+		.menu a:active,
+		.menu a:hover{
+			background: rgba(0,0,0, 0.1);
+		}
+	}
+
+
+.menu-celular {
+	display: block;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #8ec1da;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	box-shadow: 2px 10px 50px #000000;
+}
+.menu-celular a:active,
+.menu-celular a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #27496d;;
+	display: block;
+	transition: 0.3s;
+}
+.menu-celular a:hover {
+	color: #192e44;
+	background: rgba(0,0,0, 0.1);
+}
+.menu-celular .closebtn {
+    position: absolute;
+    top: 0;
+    display: block;
+    right: 0;
+    font-size: 36px;
+    margin-left: 0;
+}
+.menu-celular .closebtn:hover, .menu-celular .closebtn:active {
+    background: none;
+}
+#main {
+	transition: margin-left .5s;
+}
+span.menu-icon {
+	display: block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background: rgba(0,0,0, 0.1);;
+    display: block;
+    color:  #192e44;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+	@media (min-width: 560px){
+		.menu-celular{
+			display: none;
+		}
+		span.menu-icon{
+			display: none;
 		}
 	}
 a{
@@ -55,9 +125,14 @@ a{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+a:active,
 a:hover{
 	color: #192e44;
 	text-decoration: none;
+}
+p{
+	font-size: 16px;
+	line-height: 1.3em;
 }
 .site-subtitle, 
 .site-title {
@@ -70,11 +145,13 @@ a:hover{
 	font-size: 2em;
 }
 .site-subtitle {
-	font-style: italic;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 0.8em;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-shadow: 0 7px 10px #000;
 }
+
 	@media (min-width:400px){
 		.site-title{
 			font-size: 4.5em;
@@ -86,14 +163,39 @@ a:hover{
 
 section{
 	margin: 0 2em;
+	min-height: 100vh;
 }
 .bg-claro{
 	background:#c0dfed;
 }
-.portfolio h2{
+section h2{
+	font-size: 2em;
 	text-align: center;
-	padding: 85px 0 30px;
+	padding: 100px 0 50px;
 	text-transform: uppercase;
+}
+
+.conteudo {
+    margin: 0 auto;
+    max-width: 60vw;
+ }
+.sobre .foto{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-right: 1em;
+}
+.foto img{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+.texto {
+    max-width: 70%;
+}
+.texto p{
+	margin: 1em 2em;
 }
 .portfolio-cards {
 	display: grid;
@@ -104,6 +206,7 @@ section{
 	justify-content: center;
 	text-align: center;
 }
+
 	@media(min-width: 560px){
 		.portfolio-cards{
 			gap: 20px;
@@ -129,6 +232,29 @@ section{
     border-radius: 8px;
     object-fit: cover;
 }
+.portfolio-cards figure a:active,
 .portfolio-cards figure a:hover{
 	opacity: 0.8;
+}
+.contato p{
+	padding: 2em 2em 1em;
+	text-align: center;
+	margin: 0 auto;
+}
+.social-icons{
+	text-align: center;
+	margin: 10em 0 5em;
+}
+.social{
+	font-size: 2.5em;
+	text-align: center;
+	padding: .5em;
+}
+.social:active,
+.social:hover{
+	text-shadow: 0 30px 30px #000;
+}
+footer p{
+	text-align: center;
+	margin-bottom: 1rem;
 }
