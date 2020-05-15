@@ -178,28 +178,21 @@ section h2{
 	text-transform: uppercase;
 }
 
-.conteudo {
-    margin: 0 auto;
-    max-width: 60vw;
- }
-.sobre .foto{
-	width: 300px;
-	height: 300px;
-	float: left;
-	margin-right: 1em;
+ .conteudo {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: center;
+	align-content: center;
+	gap: 2em;
 }
-.foto img{
+.sobre img{
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
 	border-radius: 8px;
 }
-.texto {
-	max-width: 70%;
-	float: left;
-}
 .texto p{
-	margin: 1em 2em;
+	margin: 1em 0;
 }
 .portfolio-cards {
 	display: grid;
