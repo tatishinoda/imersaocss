@@ -192,7 +192,8 @@ section h2{
 	border-radius: 8px;
 }
 .texto {
-    max-width: 70%;
+	max-width: 70%;
+	float: left;
 }
 .texto p{
 	margin: 1em 2em;
