@@ -21,7 +21,7 @@
       <a href="#contato">Contato</a>
     </div>
     <nav class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="#main">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
@@ -35,62 +35,80 @@
     </div>
   </header>
 
-  <section id="sobre" class="bg-claro sobre">
+  <section id="sobre" class="container sobre">
     <h2>Quem sou eu?</h2>
     <div class="conteudo">
       <img src="images/eu.jpg" alt="Tatiane Gabrielle">
       <div class="texto">
         <p>Oi, meu nome é Tatiane, tenho 30 anos e sou Web Designer e Desenvolvedora Front End Jr.</p>
-        <p>Atualmente trabalho como freelancer desenvendo sites e email marketing, estou buscando sempre me atualizar,
-          pois acredito que nunca saberemos tudo e é sempre bom aprender novas formas.</p>
+        <p>Atualmente trabalho como freelancer desenvolvendo sites e email marketing.</p>
+        <p>A <strong>#IMERSÃOCSS</strong> foi de grande utilidade para atualizar conceitos e aprimorar os conhecimentos
+          que já possuia.
+        </p>
+        <p>Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css/" target="_blank">Imersão
+            CSS
+            da Alura</a> com o apoio das professoras <a href="https://twitter.com/aquijuz" target="_blank">Juliana
+            Amoasei</a> e <a href="https://twitter.com/vanessametonini" target="_blank">Vanessa Tonini</a> e pitacos do
+          #fiscaldesites <a href="https://twitter.com/paulo_caelum" target="_blank">Paulo Silveira</a></p>
       </div>
     </div>
   </section>
 
-  <section id="portfolio" class="bg-claro portfolio">
+  <section id="portfolio" class="container portfolio">
     <h2>Portfólio</h2>
-
     <div class="portfolio-cards">
-      <a href="https://tatishinoda.com">
-        <figure>
+      <a class="card" href="https://tatishinoda.com">
+        <figure class="card-front">
           <img class="img-portfolio" src="images/thumb-fuji.png" alt="O Original">
-          <figcaption>Fujifilm - O Original</figcaption>
         </figure>
+        <div class="card-back">
+          <span>O Original</span>
+        </div>
       </a>
-      <a href="https://tatishinoda.com">
-        <figure>
+      <a class="card" href="https://tatishinoda.com">
+        <figure class="card-front">
           <img class="img-portfolio" src="images/thumb-tutti2.png" alt="Tutti Hortelã Frutti">
-          <figcaption>Tutti Hortelã Frutti</figcaption>
         </figure>
+        <div class="card-back">
+          <span>Tutti Hortelã Frutti</span>
+        </div>
       </a>
-      <a href="https://tatishinoda.com">
-        <figure>
+      <a class="card" href="https://tatishinoda.com">
+        <figure class="card-front">
           <img class="img-portfolio" src="images/thumb-loja.png" alt=">Lojinha">
-          <figcaption>Lojinha</figcaption>
         </figure>
+        <div class="card-back">
+          <span>Lojinha</span>
+        </div>
       </a>
-      <a href="https://tatishinoda.com">
-        <figure>
+      <a class="card" href="https://tatishinoda.com">
+        <figure class="card-front">
           <img class="img-portfolio" src="images/thumb-marcelina.png" alt="Marcelina">
-          <figcaption>Marcelina</figcaption>
+          <div class="card-back">
+            <span>Marcelina</span>
+          </div>
         </figure>
       </a>
-      <a href="https://tatishinoda.com">
-        <figure>
+      <a class="card" href="https://tatishinoda.com">
+        <figure class="card-front">
           <img class="img-portfolio" src="images/thumb-tutti1.png" alt="Tutti Hortelã Frutti">
-          <figcaption>Tutti Hortelã Frutti</figcaption>
         </figure>
+        <div class="card-back">
+          <span>Tutti Hortelã Frutti</span>
+        </div>
       </a>
-      <a href="https://tatishinoda.com">
-        <figure>
+      <a class="card" href="https://tatishinoda.com">
+        <figure class="card-front">
           <img class="img-portfolio" src="images/thumb-vintage.png" alt="Vintage Invest">
-          <figcaption>Vintage Invest</figcaption>
         </figure>
+        <div class="card-back">
+          <span>Vintage Invest</span>
+        </div>
       </a>
     </div>
 
   </section>
-  <section id="contato" class="bg-claro contato">
+  <section id="contato" class="container contato">
     <h2>Contato </h2>
     <p>Você pode me encontrar em um desses lugares aqui:</p>
     <div class="social-icons">
