@@ -190,6 +190,7 @@ section h2{
 	width: 300px;
 	height: 400px;
 	object-fit: cover;
+	object-position: 0px -25px;
 	margin: 0 auto;
 }
 .texto p{
@@ -300,10 +301,6 @@ section h2{
 	transition-delay: 0.15s;
 }
 	
-	  
-
-
-
 .contato p{
 	padding: 2em 2em 1em;
 	text-align: center;
@@ -311,7 +308,7 @@ section h2{
 }
 .social-icons{
 	text-align: center;
-	margin: 10em 0 5em;
+	margin: 3em 0 6em;
 }
 .social{
 	font-size: 2.5em;
